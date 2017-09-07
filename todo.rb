@@ -1,17 +1,21 @@
 require 'sinatra'
 require 'json'
+require 'active_record'
+require 'mysql2'
 
-get '/show' do
-  article = {
-      id: 1,
-      title: "today's dialy",
-      content: "It's a sunny day."
-  }
+ActiveRecord::Base.configurations = YAML.load_file('database.yml')
+ActiveRecord::Base.establish_connection(:development)
 
-  article.to_json
+class Todo_lists < ActiveRecord::Base
 end
 
-post '/edit' do
+get '/todolist' do
+  content_type :json, :charset => 'utf-8'
+  todolist = Todo_lists.order("created_at DESC").limit(10)
+  todolist.to_json(:root => false)
+end
+
+post '/addtodo' do
   body = request.body.read
 
   if body == ''
