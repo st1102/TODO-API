@@ -9,19 +9,26 @@ ActiveRecord::Base.establish_connection(:development)
 class Todo_lists < ActiveRecord::Base
 end
 
+# 登録済みTODOを全件取得
 get '/show' do
-  content_type :json, :charset => 'utf-8'
-  todolist = Todo_lists.all
-  todolist.to_json(:root => false)
+  todolist = Todo_lists.all.to_json
 end
 
-post '/new' do
-  todolists = JSON.parse(request.body.read.to_s)
-  title = todolists['title']
-  deadline = todolists['deadline']
+# 登録済みTODOの中から指定1件を取得
+get '/show/:id' do
+  todo = Todo_lists.find(params[:id])
+  if todo
+    todolist = Todo_lists.new
+    todolist = todo.to_json
+  else
+    "ID:#{params[:id]}のTODOはありません。"
+  end
+end
 
-  todolists = Todo_lists.new
-  todolists.title = title
-  todolists.deadline = deadline
-  todolists.save
+# TODOを新規登録
+post '/new' do
+  todo = JSON.parse(request.body.read)
+
+  todolist = Todo_lists.new(todo)
+  todolist.save
 end
