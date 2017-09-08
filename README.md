@@ -59,7 +59,7 @@ URL  
 ![get_12_url](https://user-images.githubusercontent.com/29883577/30202400-49005390-94b9-11e7-832a-cfeccace4dd9.png)  
   
 レスポンス   
-   
+  
 ![response_12](https://user-images.githubusercontent.com/29883577/30202383-37844310-94b9-11e7-8c8f-1af1c233bace.png)   
   
 ## Author
