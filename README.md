@@ -36,12 +36,12 @@ URL
 ![response_after_post](https://user-images.githubusercontent.com/29883577/30202289-dd48ec52-94b8-11e7-9203-454f862e5c54.png)  
 IDを指定しデータの取得 
 URL  
-![get_1_url](https://user-images.githubusercontent.com/29883577/30202331-0f2e009a-94b9-11e7-8f5d-2c0c45f32f3d.png) 
-レスポンス  
+![get_1_url](https://user-images.githubusercontent.com/29883577/30202331-0f2e009a-94b9-11e7-8f5d-2c0c45f32f3d.png)  
+レスポンス   
 ![response_1](https://user-images.githubusercontent.com/29883577/30202371-31574d98-94b9-11e7-9d00-6e299afdddf9.png) 
 URL  
-![get_12_url](https://user-images.githubusercontent.com/29883577/30202400-49005390-94b9-11e7-832a-cfeccace4dd9.png) 
-レスポンス  
+![get_12_url](https://user-images.githubusercontent.com/29883577/30202400-49005390-94b9-11e7-832a-cfeccace4dd9.png)  
+レスポンス   
 ![response_12](https://user-images.githubusercontent.com/29883577/30202383-37844310-94b9-11e7-8c8f-1af1c233bace.png)   
 ## Licence
 
