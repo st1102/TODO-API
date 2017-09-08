@@ -9,18 +9,19 @@ ActiveRecord::Base.establish_connection(:development)
 class Todo_lists < ActiveRecord::Base
 end
 
-get '/todolist' do
+get '/show' do
   content_type :json, :charset => 'utf-8'
-  todolist = Todo_lists.order("created_at DESC").limit(10)
+  todolist = Todo_lists.all
   todolist.to_json(:root => false)
 end
 
-post '/addtodo' do
-  body = request.body.read
+post '/new' do
+  todolists = JSON.parse(request.body.read.to_s)
+  title = todolists['title']
+  deadline = todolists['deadline']
 
-  if body == ''
-    status 400
-  else
-    body.to_json
-  end
+  todolists = Todo_lists.new
+  todolists.title = title
+  todolists.deadline = deadline
+  todolists.save
 end
