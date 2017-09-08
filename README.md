@@ -32,7 +32,7 @@ URL  
   
 ![response_first](https://user-images.githubusercontent.com/29883577/30202253-afe843ac-94b8-11e7-8ff7-7dc407cd9100.png)   
   
-データの追加  
+データの追加  
 リクエスト  
   
 ![request](https://user-images.githubusercontent.com/29883577/30202283-d81bc5c4-94b8-11e7-8676-975527fb45dc.png) 
@@ -54,8 +54,8 @@ URL  
   
 ![response_1](https://user-images.githubusercontent.com/29883577/30202371-31574d98-94b9-11e7-9d00-6e299afdddf9.png) 
   
-URL  
-   
+URL  
+  
 ![get_12_url](https://user-images.githubusercontent.com/29883577/30202400-49005390-94b9-11e7-832a-cfeccace4dd9.png)  
   
 レスポンス   
