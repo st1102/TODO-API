@@ -31,8 +31,8 @@ URL  
 レスポンス     
   
 ![response_first](https://user-images.githubusercontent.com/29883577/30202253-afe843ac-94b8-11e7-8ff7-7dc407cd9100.png)   
-  
-TODOの新規登録  
+  
+TODOの新規登録  
 リクエスト  
   
 ![request](https://user-images.githubusercontent.com/29883577/30202283-d81bc5c4-94b8-11e7-8676-975527fb45dc.png) 
