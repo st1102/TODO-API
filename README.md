@@ -31,8 +31,8 @@ URL  
 レスポンス     
   
 ![response_first](https://user-images.githubusercontent.com/29883577/30202253-afe843ac-94b8-11e7-8ff7-7dc407cd9100.png)   
-  
-データの追加  
+  
+TODOの新規登録  
 リクエスト  
   
 ![request](https://user-images.githubusercontent.com/29883577/30202283-d81bc5c4-94b8-11e7-8676-975527fb45dc.png) 
@@ -45,7 +45,7 @@ URL  
   
 ![response_after_post](https://user-images.githubusercontent.com/29883577/30202289-dd48ec52-94b8-11e7-9203-454f862e5c54.png)   
   
-IDを指定しデータの取得  
+IDを指定し指定データ１件の取得  
 URL  
   
 ![get_1_url](https://user-images.githubusercontent.com/29883577/30202331-0f2e009a-94b9-11e7-8f5d-2c0c45f32f3d.png)  
